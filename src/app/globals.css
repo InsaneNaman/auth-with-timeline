@@ -1,0 +1,14 @@
+/* Reset CSS */
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+  --black: #131319;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: var(--black);
+}
