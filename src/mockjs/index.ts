@@ -36,3 +36,8 @@ export const mockPosts: Array<TPost> = [
     emoji: "👍",
   },
 ];
+
+export const mockUserDetails = {
+  id: 1,
+  name: "Jane",
+};

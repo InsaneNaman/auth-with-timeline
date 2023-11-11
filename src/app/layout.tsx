@@ -1,6 +1,9 @@
 //styles
 import "./globals.css";
 
+//fonts
+import { inter } from "@/app/fonts";
+
 //types
 import type { Metadata } from "next";
 
@@ -16,7 +19,7 @@ export default function RootLayout({
   return (
     <html>
       <head />
-      <body>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

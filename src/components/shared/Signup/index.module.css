@@ -1,0 +1,103 @@
+.container {
+  padding: 4rem 2.4rem 4rem 2.4rem;
+  background-color: var(--black-blue);
+  border-radius: 0.8rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--gray);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.subTitle {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 0.8rem;
+  margin-bottom: 4.5rem;
+  text-align: center;
+}
+.label {
+  color: var(--grayish-blue);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 1.6rem;
+}
+.formInput {
+  width: 41.5rem;
+  height: 4.3rem;
+  flex-shrink: 0;
+  border-radius: 0.4rem;
+  border: 0.15rem solid #35373b;
+  background-color: var(--black-blue);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.3rem;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  color: var(--grayish-blue);
+}
+.formInput::placeholder {
+  color: var(--gray-200);
+}
+.formInput:focus {
+  outline-color: var(--gray-200);
+}
+
+.forgetPasswordLabel {
+  color: var(--grayish-blue);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: inline-flex;
+}
+
+.passwordInput {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+}
+
+.submitButton {
+  width: 41.5rem;
+  height: 4.3rem;
+  border-radius: 4px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: var(--blue);
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.footer {
+  color: var(--gray-200);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 1.2rem;
+}
+
+.footerRegister {
+  color: var(--white);
+  margin-left: 0.4rem;
+  cursor: pointer;
+}

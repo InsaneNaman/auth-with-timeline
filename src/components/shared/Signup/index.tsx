@@ -1,41 +1,84 @@
 "use client";
 import { useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
 
-function Signup() {
+//styles
+import styles from "./index.module.css";
+
+type Props = {
+  toggleAuthModal: Function;
+};
+
+function Signup(props: Props) {
+  const { toggleAuthModal } = props;
+  const router = useRouter();
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+    router.push("/home");
+  };
   console.log(errors);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input
-        type="email"
-        placeholder="Enter your email"
-        aria-invalid={errors.email ? "true" : "false"}
-        {...register("email", {
-          required: true,
-          pattern: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/i,
-        })}
-      />
-      <input
-        type="text"
-        placeholder="username"
-        {...register("username", {
-          required: true,
-          min: 6,
-        })}
-      />
-      <input
-        type="password"
-        placeholder="Choose a strong"
-        {...register("password", { required: true, min: 8 })}
-      />
-      <input type="submit" />
-    </form>
+    <section className={styles.container}>
+      <div className={styles.title}>SIGN UP</div>
+      <div className={styles.subTitle}>Create an account to continue</div>
+      <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+        <label htmlFor="email" className={styles.label}>
+          Email or Username:
+        </label>
+        <input
+          type="email"
+          className={styles.formInput}
+          placeholder="Enter your email"
+          aria-invalid={!!errors.email}
+          {...register("email", {
+            required: true,
+            pattern: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/i,
+          })}
+        />
+
+        <label htmlFor="username" className={styles.label}>
+          Username:
+        </label>
+        <input
+          type="text"
+          className={styles.formInput}
+          placeholder="username"
+          {...register("username", {
+            required: true,
+            min: 6,
+          })}
+        />
+
+        <label htmlFor="password" className={styles.label}>
+          Password:
+        </label>
+
+        <input
+          type="password"
+          placeholder="Enter your password"
+          className={styles.formInput}
+          {...register("password", { required: true, min: 8 })}
+        />
+        <input type="submit" className={styles.submitButton} />
+        <div className={styles.footer}>
+          <span>Already have an account? </span>
+          <span
+            role="button"
+            onClick={() => toggleAuthModal()}
+            className={styles.footerRegister}
+          >
+            {`Login ->`}
+          </span>
+        </div>
+      </form>
+    </section>
   );
 }
 

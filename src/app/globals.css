@@ -1,8 +1,16 @@
 /* Reset CSS */
-@import 'node_modules/modern-normalize/modern-normalize.css';
+@import "node_modules/modern-normalize/modern-normalize.css";
 
 :root {
   --black: #131319;
+  --gray: #6b6c70;
+  --grayish-blue: #c5c7ca;
+  --dark-grayish-blue: #35373b;
+  --gray-200: #7f8084;
+  --white: #fff;
+  --black-blue: #27292d;
+  --blue: #4a96ff;
+  --gray-300: #969696;
 }
 
 html {
@@ -11,4 +19,11 @@ html {
 
 body {
   background: var(--black);
+  color: #fff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
