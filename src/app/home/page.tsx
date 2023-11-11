@@ -15,7 +15,7 @@ import styles from "./index.module.css";
 import { TPost } from "@/@types/index";
 
 function Home() {
-  const [posts, setPosts] = useState<Array<TPost>>();
+  const [posts, setPosts] = useState<Array<TPost>>([]);
   useEffect(() => {
     const fetchPosts = async () => {
       const response = await getPosts();
@@ -39,9 +39,8 @@ function Home() {
         </div>
       </section>
       <section>
-        {posts.map((post) => (
-          <Post post={post} timest key={post.id} />
-        ))}
+        {posts.length &&
+          posts.map((post) => <Post post={post} key={post.id} />)}
       </section>
     </div>
   );
