@@ -1,4 +1,7 @@
 "use client";
+// modal standard boilerplate
+/* eslint-disable */
+
 import styles from "./index.module.css";
 import React from "react";
 import { useState, useCallback, useMemo } from "react";

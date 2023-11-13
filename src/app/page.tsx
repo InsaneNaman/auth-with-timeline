@@ -13,6 +13,7 @@ export default function Index() {
   const [authModal, toggleAuthModal] = useState("login");
   return (
     <main className={styles.container}>
+      {/* svg so not using Next's Image builtin component */}
       <img className={styles.brandLogo} src="/brand.svg" alt="brand logo" />
       <div className={styles.authContainer}>
         {authModal === "login" ? (

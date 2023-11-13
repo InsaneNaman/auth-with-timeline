@@ -23,7 +23,6 @@ function Login(props: Props) {
       router.push("/home");
     }
   };
-  console.error(errors);
 
   return (
     <section className={styles.container}>

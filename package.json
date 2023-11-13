@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@next/font": "^14.0.2",
-    "@tanstack/react-form": "^0.9.0",
     "dayjs": "^1.11.10",
     "modern-normalize": "^2.0.0",
     "next": "14.0.2",

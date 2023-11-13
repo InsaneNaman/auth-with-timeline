@@ -19,10 +19,9 @@ function Signup(props: Props) {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    // here we can check the data and call the api
     router.push("/home");
   };
-  console.log(errors);
 
   return (
     <section className={styles.container}>
@@ -39,7 +38,7 @@ function Signup(props: Props) {
           aria-invalid={!!errors.email}
           {...register("email", {
             required: true,
-            pattern: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/i,
+            pattern: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/i, // email regex
           })}
         />
 
@@ -51,7 +50,7 @@ function Signup(props: Props) {
           className={`${styles.formInput} ${
             errors.username ? "input-error" : ""
           }`}
-          placeholder="username"
+          placeholder="Username"
           {...register("username", {
             required: true,
             min: 6,
