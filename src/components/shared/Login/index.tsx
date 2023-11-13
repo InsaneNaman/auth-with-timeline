@@ -18,7 +18,8 @@ function Login(props: Props) {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
+  // Adding any but need to dig deeper to find the right type
+  const onSubmit = (data: any) => {
     if (Object.keys(data).length) {
       router.push("/home");
     }

@@ -18,9 +18,11 @@ function Signup(props: Props) {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     // here we can check the data and call the api
-    router.push("/home");
+    if (Object.keys(data).length) {
+      router.push("/home");
+    }
   };
 
   return (
