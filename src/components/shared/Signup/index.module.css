@@ -3,6 +3,7 @@
   background-color: var(--black-blue);
   border-radius: 0.8rem;
   max-width: 46.3rem;
+  width: 90vw;
 }
 .form {
   display: flex;
@@ -50,6 +51,8 @@
   padding: 0.8rem;
   margin-top: 1rem;
   color: var(--grayish-blue);
+  width: 100%;
+  max-width: 41.5rem;
 }
 .formInput::placeholder {
   color: var(--gray-200);
@@ -77,6 +80,8 @@
   width: 41.5rem;
   height: 4.3rem;
   margin-top: 2rem;
+  width: 100%;
+  max-width: 41.5rem;
 }
 
 .footer {

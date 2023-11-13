@@ -2,6 +2,7 @@
   padding: 4rem 2.4rem 4rem 2.4rem;
   background-color: var(--black-blue);
   border-radius: 0.8rem;
+  width: 90vw;
   max-width: 46.3rem;
 }
 .form {
@@ -36,7 +37,8 @@
   line-height: normal;
 }
 .formInput {
-  width: 41.5rem;
+  width: 100%;
+  max-width: 41.5rem;
   height: 4.3rem;
   border-radius: 0.4rem;
   border: 0.15rem solid #35373b;
@@ -72,7 +74,8 @@
 }
 
 .submitButton {
-  width: 41.5rem;
+  width: 100%;
+  max-width: 41.5rem;
   height: 4.3rem;
   margin-top: 2rem;
 }
