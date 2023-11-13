@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 6.9rem;
+}
+.postCreateContainer {
+  width: 90vw;
+  max-width: 70rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.loginBtn {
+  height: 3rem;
+  background-color: var(--white);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: var(--black-blue);
+}
+.title {
+  color: var(--grayish-blue);
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.subTitle {
+  color: #7f8084;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  width: 58rem;
+  margin-bottom: 4rem;
+  width: 90vw;
+  max-width: 70rem;
+}
+.createPostContainer {
+  border-radius: 0.8rem;
+  border: 2px solid var(--dark-grayish-blue);
+  background: var(--black-blue);
+  padding: 2.4rem 2rem 2.4rem 2rem;
+}
+
+.createPostTitle {
+  color: var(--grayish-blue);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.chatIconContainer {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black-blue);
+  border-radius: 50%;
+  margin: 1.6rem;
+}
+.postInputContainer {
+  background-color: var(--black-200);
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  width: 100%;
+  height: 7.8rem;
+  margin-top: 1.6rem;
+}
+.postInput {
+  width: 100%;
+  height: 7.4rem;
+  outline: none;
+  border: none;
+  background-color: var(--black-200);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: var(--grayish-blue);
+}
+.postInput::placeholder {
+  display: flex;
+  color: var(--gray-200);
+  align-items: center;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.postSubmitBtn {
+  width: 11.1rem;
+  height: 4.3rem;
+  margin-top: 1.6rem;
+}

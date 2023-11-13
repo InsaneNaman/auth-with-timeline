@@ -3,6 +3,7 @@
 
 :root {
   --black: #131319;
+  --black-200: #191920;
   --gray: #6b6c70;
   --grayish-blue: #c5c7ca;
   --dark-grayish-blue: #35373b;
@@ -11,6 +12,7 @@
   --black-blue: #27292d;
   --blue: #4a96ff;
   --gray-300: #969696;
+  --red: red;
 }
 
 html {
@@ -26,4 +28,22 @@ body {
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+/* creating global styles */
+.submitBtn {
+  border-radius: 0.4rem;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+}
+
+.input-error:focus {
+  outline: var(--red);
+  border: 2px solid var(--red);
 }
