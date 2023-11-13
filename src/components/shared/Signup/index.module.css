@@ -2,6 +2,7 @@
   padding: 4rem 2.4rem 4rem 2.4rem;
   background-color: var(--black-blue);
   border-radius: 0.8rem;
+  max-width: 46.3rem;
 }
 .form {
   display: flex;
@@ -75,15 +76,6 @@
 .submitButton {
   width: 41.5rem;
   height: 4.3rem;
-  border-radius: 4px;
-  background: var(--blue);
-  color: var(--white);
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  border: var(--blue);
-  cursor: pointer;
   margin-top: 2rem;
 }
 

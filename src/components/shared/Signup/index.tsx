@@ -34,7 +34,7 @@ function Signup(props: Props) {
         </label>
         <input
           type="email"
-          className={styles.formInput}
+          className={`${styles.formInput} ${errors.email ? "input-error" : ""}`}
           placeholder="Enter your email"
           aria-invalid={!!errors.email}
           {...register("email", {
@@ -48,7 +48,9 @@ function Signup(props: Props) {
         </label>
         <input
           type="text"
-          className={styles.formInput}
+          className={`${styles.formInput} ${
+            errors.username ? "input-error" : ""
+          }`}
           placeholder="username"
           {...register("username", {
             required: true,
@@ -63,16 +65,23 @@ function Signup(props: Props) {
         <input
           type="password"
           placeholder="Enter your password"
-          className={styles.formInput}
+          className={`${styles.formInput} ${
+            errors.password ? "input-error" : ""
+          }`}
           {...register("password", { required: true, min: 8 })}
         />
-        <input type="submit" className={styles.submitButton} />
+        <input type="submit" className={`${styles.submitButton} submitBtn`} />
         <div className={styles.footer}>
           <span>Already have an account? </span>
           <span
             role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              e.key === "Enter" && toggleAuthModal();
+            }}
             onClick={() => toggleAuthModal()}
             className={styles.footerRegister}
+            aria-label="Login"
           >
             {`Login ->`}
           </span>

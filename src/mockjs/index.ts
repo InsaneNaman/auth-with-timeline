@@ -4,25 +4,27 @@ import { TPost } from "@/@types";
 export const mockPosts: Array<TPost> = [
   {
     id: "1",
-    authorName: "John Doe",
+    authorName: "Theresa Webb",
     avatar:
       "https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     createdAt: 1699258488,
     totalComments: 5,
     updatedAt: 1699258488,
-    emoji: "👍",
+    emoji: "👋",
   },
   {
     id: "2",
-    authorName: "John Doe",
+    authorName: "Marvin McKinney",
     avatar:
       "https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     createdAt: 1699258488,
     totalComments: 5,
     updatedAt: 1699344888,
-    emoji: "👍",
+    emoji: "😞",
   },
   {
     id: "3",
