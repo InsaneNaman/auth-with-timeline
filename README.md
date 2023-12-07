@@ -1,3 +1,8 @@
+Description- Assignment given by atlys for the Frontend Engineer Position. 
+
+### How to use: 
+Enter any email and password (more than 8 characters)
+
 Tools:
 - Bundlephobia - Used for scanning bundle size
 
